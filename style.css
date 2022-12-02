@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header,
+section {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.contacts button{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 13px;
+}
+.navbar-nav a {
+  transition: color 0.3s ease;
+}
+.navbar-nav a:hover {
+  color: crimson;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 24px;
+  color: black;
+  font-weight: 500;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+nav {
+  position: relative;
+  top: 1rem;
+}
+.contacts {
+  position: relative;
+  float: right;
+}
+
+.navbar-toggler {
+  color: #ff4500;
+  display: none;
+  background: transparent;
+}
+
+button {
+  padding: 11px 22px;
+  margin: 1rem;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(to right, #ee1a17, #fc800c);
+  cursor: pointer;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.container-1 .text {
+  position: absolute;
+  left: 5rem;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.text  h1 {
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
+.text  p {
+  font-weight: 500;
+  margin-top: 0.4rem;
+  font-size: larger;
+}
+
+.section-1 {
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  gap: 30px;
+
+}
+
+
+
+.text-right  h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.text-right  h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.text-rights p {
+  font-size: 18px;
+}
+
+.text-rights  button {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.section-2 {
+  background: #e2dfdf;
+}
+
+.section-2 .cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px;
+  gap: 30px;
+}
+
+.card-text {
+  line-height: 1.5;
+}
+
+footer {
+  background-color: rgba(22, 22, 22, 0.9);
+  color: #fff;
+}
+
+footer .container_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.container_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-top: 1px solid #808080;
+}
+
+.text-left {
+  position: absolute;
+}
+.container_2 p {
+  margin-left: 4.5em;
+}
+.social {
+  color: #e2dfdf;
+}
+@media (max-width:1030px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width:600px){
+  .collapse{
+   display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .text-right  h1 {
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .text-right  h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .text-rights  p {
+    font-size: 16px;
+  }
+
+  .text-rights  button {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .section-2 {
+  }
+  .section-2 {
+    display: flex;
+  }
+
+  .service-1,
+  .service-2 {
+    width: 100%;
+  }
+  .service-1 img {
+    width: 100%;
+  }
+  .service-2 img {
+    width: 100%;
+  }
+}
+@media(max-width:950px){
+  .container-1 .text {
+    left: 3.5rem;
+  }
+  .text h1 {
+    font-size: 1.7em;
+  }
+  .text p {
+    font-size: 1.1em;
+  }
+  .text button {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container-1{
+    width: 100%;
+  }
+  .container-1 .text {
+    left: 3rem;
+  }
+  .text h1 {
+    font-size: 1.5em;
+  }
+  .btn{
+    height: 30px;
+  }
+  .text p {
+    font-size: 0.9em;
+  }
+  .text button {
+    font-size: 0.7rem;
+  }
+  footer .container {
+    font-size: 13px;
+  }
+}
+@media (max-width: 425px) {
+  .contacts {
+    position: relative;
+    bottom: 5rem;
+    width: 100%;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+  }
+  .contacts .phone {
+    position: relative;
+    left: 10rem;
+    font-weight: 700;
+  }
+  .contacts .button {
+    position: relative;
+    top: 4em;
+    font-weight: 600;
+    left: 1em;
+  }
+  button {
+    font-size: 0.5em;
+  }
+  nav img {
+    position: relative;
+    left: 5rem;
+  }
+  .navbar-toggler {
+    color: #ff4500;
+    display: block;
+    background: transparent;
+    position: relative;
+    bottom: 5rem;
+    font-size: 20px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: flex-start;
+    top: -3rem;
+    z-index: 500;
+  }
+  .container-1 {
+    /* display: inline-block; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  /* .container-1 .text {
+    position: absolute;
+    left: 9rem;
+    bottom: 6.5rem;
+  } */
+  .text h1 {
+    font-size: 1em;
+  }
+  .text p {
+    font-size: 0.8em;
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .image-blurb img {
+    width: 90%;
+    position: relative;
+    left: 1.2rem;
+  }
+  .text-right {
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .text-muted {
+    padding-bottom: 1 rem;
+    /* border-bottom: 1px solid #808080; */
+  }
+  .button {
+    padding-bottom: 1 rem;
+    border-bottom: 1px solid #808080;
+    font-size: 18px;
+  }
+  .social {
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 30px;
+  }
+  .container_2 {
+    padding: 1em 0;
+    display: inline-block;
+  }
+}
+@media(max-width:400px){
+  .container-1 {
+    /* display: inline-block; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(max-width:1000px){
+  .section-1{
+    display: flex;
+    flex-direction: column;
+  }
+  .image-blurb img{
+    width: 100%;
+  }
+  .text-rights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width:700px){
+ .cards .service-1{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-text h3{
+    font-size: 16px;
+  }
+}
+@media(max-width:600px){
+  .button button{
+    width: 150px;
+    font-size: 13px;
+  }
+}
